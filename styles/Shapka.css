@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+
+}
+
+.main-header {
+    position: relative;
+    background-color: rgb(122, 122, 122);
+
+}
+
+.layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
+
+
+
+.layer-1 {
+    transform: translate3d(0, calc(var(--scrolTop) / 1.6), 0);
+
+}
+
+.layer-2 {
+    transform: translate3d(0, calc(var(--scrolTop) / 2), 0);
+
+}
+
+.layer-3 {
+    transform: translate3d(0, calc(var(--scrolTop) / 3), 0);
+
+}
+
+.layer-4 {
+    transform: translate3d(0, calc(var(--scrolTop) / 4), 0);
+
+}
